@@ -5,6 +5,8 @@ using PlanShare.Api.Token;
 using PlanShare.Application;
 using PlanShare.Domain.Security.Tokens;
 using PlanShare.Infrastructure;
+using PlanShare.Infrastructure.Extensions;
+using PlanShare.Infrastructure.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -75,4 +77,15 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+if(builder.Configuration.IsUnitTestEnviroment() is false)
+{
+    await MigrationDatabase();
+}
+
 app.Run();
+
+async Task MigrationDatabase()
+{
+    await using var scope = app.Services.CreateAsyncScope();
+    DatabaseMigration.MigrateDatabase(scope.ServiceProvider);
+}
