@@ -1,7 +1,6 @@
 ﻿using Dapper;
 using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
-using MySqlConnector;
 using Npgsql;
 
 namespace PlanShare.Infrastructure.Migrations;
