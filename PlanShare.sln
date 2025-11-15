@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11206.111
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{816608D2-0ED7-4197-86F3-8EC167379519}"
 EndProject
@@ -20,6 +20,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanShare.Communication", "src\Shared\PlanShare.Communication\PlanShare.Communication.csproj", "{0CCBEB71-E17E-402A-BA74-AB55572BBD96}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanShare.Exceptions", "src\Shared\PlanShare.Exceptions\PlanShare.Exceptions.csproj", "{46275EA6-A8E8-4563-A958-41466C4D1E2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{5A9A5BE0-5762-4F77-8C09-0081EBB94935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanShare.App", "PlanShare.App\PlanShare.App.csproj", "{83CEBB08-2F58-45BC-B331-3FC00FAC1255}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,12 @@ Global
 		{46275EA6-A8E8-4563-A958-41466C4D1E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46275EA6-A8E8-4563-A958-41466C4D1E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46275EA6-A8E8-4563-A958-41466C4D1E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CEBB08-2F58-45BC-B331-3FC00FAC1255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CEBB08-2F58-45BC-B331-3FC00FAC1255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CEBB08-2F58-45BC-B331-3FC00FAC1255}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{83CEBB08-2F58-45BC-B331-3FC00FAC1255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CEBB08-2F58-45BC-B331-3FC00FAC1255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CEBB08-2F58-45BC-B331-3FC00FAC1255}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +74,10 @@ Global
 		{9D614820-BE8E-4690-B603-A99A7BC24797} = {816608D2-0ED7-4197-86F3-8EC167379519}
 		{0CCBEB71-E17E-402A-BA74-AB55572BBD96} = {9D614820-BE8E-4690-B603-A99A7BC24797}
 		{46275EA6-A8E8-4563-A958-41466C4D1E2C} = {9D614820-BE8E-4690-B603-A99A7BC24797}
+		{5A9A5BE0-5762-4F77-8C09-0081EBB94935} = {816608D2-0ED7-4197-86F3-8EC167379519}
+		{83CEBB08-2F58-45BC-B331-3FC00FAC1255} = {5A9A5BE0-5762-4F77-8C09-0081EBB94935}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FBDF0DA-4B1A-4CFC-A602-4575B4225DC7}
 	EndGlobalSection
 EndGlobal
